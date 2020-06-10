@@ -1,7 +1,5 @@
 {% set name = "sigopt" %}
-{% set version = "5.3.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "00926b9b059acbc7f3e55365cdf281c7b8446eb7cbd0cb9bcbf3d22dd8f14aa9" %}
+{% set version = "5.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 56dc5ebdfd1ae6b0fef17aa1092147ae1176e8dd14be892e3aa3ca38e72214ee
 
 build:
   noarch: python
@@ -36,9 +34,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'SigOpt Python API Client'
+  summary: SigOpt Python API Client
 
 extra:
   recipe-maintainers:
     - pfhayes
-    - alexandraj777 
+    - alexandraj777
