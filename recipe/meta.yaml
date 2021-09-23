@@ -17,6 +17,10 @@ build:
 
 requirements:
   host:
+    - pip
+    - python >=3.6
+    - requests >=2.11.1
+  run:
     - backoff
     - boto3
     - botocore
@@ -25,7 +29,6 @@ requirements:
     - docker-py
     - ipython
     - pint
-    - pip
     - pyopenssl
     - pypng
     - pystache
@@ -34,9 +37,6 @@ requirements:
     - pyyaml
     - requests >=2.11.1
     - urllib3
-  run:
-    - python >=3.6
-    - requests >=2.11.1
 
 test:
   imports:
