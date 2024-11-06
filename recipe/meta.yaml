@@ -1,5 +1,5 @@
 {% set name = "sigopt" %}
-{% set version = "7.5.0" %}
+{% set version = "8.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 45d3613b1d51f099319326fe48618588767585845b84814f7628b249caaaa1fd
+  sha256: 2b2272839dbbc4f1524847fb910f04fa3cbc3a715b2a349136e2488487cfff6a
 
 build:
   noarch: python
