@@ -17,12 +17,26 @@ build:
 
 requirements:
   host:
-    - python >=3.6
-    - requests >=2.11.1
     - pip
-  run:
     - python >=3.6
     - requests >=2.11.1
+  run:
+    - backoff
+    - boto3
+    - botocore
+    - certifi
+    - click
+    - docker-py
+    - ipython
+    - pint
+    - pyopenssl
+    - pypng
+    - pystache
+    - python >=3.6
+    - python-kubernetes
+    - pyyaml
+    - requests >=2.11.1
+    - urllib3
 
 test:
   imports:
